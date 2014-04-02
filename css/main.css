@@ -31,11 +31,16 @@ body {
 }
 
 .plaid-logo {
-  width: 100%;
-  min-height: 300px;
+  width: 134px;
   margin: 0 auto;
-  background: no-repeat url('../images/plaid-logo.png') center center;
-  background-size: contain;
+}
+
+.plaid-logo img {
+  margin-top: 22px;
+}
+
+#plaid-p {
+  display: none;
 }
 
 .copyright {
