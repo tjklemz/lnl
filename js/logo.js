@@ -58,7 +58,7 @@
   var blueSquare = { x: 500, y: bottomSquareY, a: 0, w: bottomSquareW, h: bottomSquareH, c: "#0082c7" };
   blueSquare.finalX = bigBlueSquare.finalX + bottomSquareW*2;
   blueSquare.update = function(t) {
-    this.x = -Math.exp(t*0.0015 + 5) + 650;
+    this.x = -15*Math.sqrt(t) + 650;
     this.x = Math.max(this.x, this.finalX);
     
     this.a = 0.0007*t;
@@ -68,7 +68,7 @@
   var orangeSquare = { x: 367, y: bottomSquareY, a: 0, w: bottomSquareW, h: bottomSquareH, c: "#fe8067" };
   orangeSquare.finalX = bigBlueSquare.finalX + bottomSquareW*0;
   orangeSquare.update = function(t) {
-    this.x = -Math.exp(t*0.0018 + 5) + 500;
+    this.x = -15*Math.sqrt(t) + 500;
     this.x = Math.max(this.x, this.finalX);
     
     this.a = 0.0007*t;
@@ -78,7 +78,7 @@
   var beigeSquare = { x: 440, y: bottomSquareY, a: 0, w: bottomSquareW, h: bottomSquareH, c: "#fff7e4" };
   beigeSquare.finalX = bigBlueSquare.finalX + bottomSquareW*1;
   beigeSquare.update = function(t) {
-    this.x = -Math.exp(t*0.0015 + 5) + 565;
+    this.x = -15*Math.sqrt(t) + 575;
     this.x = Math.max(this.x, this.finalX);
     
     this.a = 0.00085*t;
