@@ -47,7 +47,7 @@
     this.x = 10*Math.sqrt(t) - 160;
     this.x = Math.min(this.x, this.finalX);
     
-    this.a = 0.0007*t;
+    this.a = 0.0009*t;
     this.a = Math.min(this.a, 1.0);
   };
   
@@ -61,7 +61,7 @@
     this.x = -15*Math.sqrt(t) + 650;
     this.x = Math.max(this.x, this.finalX);
     
-    this.a = 0.0007*t;
+    this.a = 0.0009*t;
     this.a = Math.min(this.a, 1.0);
   };
   
@@ -71,7 +71,7 @@
     this.x = -15*Math.sqrt(t) + 500;
     this.x = Math.max(this.x, this.finalX);
     
-    this.a = 0.0007*t;
+    this.a = 0.0009*t;
     this.x = Math.max(this.x, this.finalX);
   };
   
@@ -81,7 +81,7 @@
     this.x = -15*Math.sqrt(t) + 575;
     this.x = Math.max(this.x, this.finalX);
     
-    this.a = 0.00085*t;
+    this.a = 0.0009*t;
     this.x = Math.max(this.x, this.finalX);
   };
   
