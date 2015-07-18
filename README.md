@@ -1,6 +1,6 @@
 Lory and Ludlow
 ===
 
-Lory and Ludlow Site
+Lory and Ludlow website
 
-2014 Lory and Ludlow LLC
+2015 Lory and Ludlow LLC
