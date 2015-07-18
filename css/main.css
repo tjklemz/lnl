@@ -18,7 +18,7 @@ img {
 
 body {
   background: #FFEC39;
-  font-size: 88%;
+  font-size: 86%;
 }
 
 h1, h2, h3 {
@@ -74,27 +74,40 @@ p {
 }
 
 .lnl-letter {
-  opacity: 1;
+  opacity: 0;
   z-index: 10;
   transform-origin: 50% 50%;
   transition: 0.25s all;
+  transform: scale(0.8);
+}
+
+.lnl-letter-1 {
+  opacity: 1;
   transform: scale(1.0);
 }
 
 .lnl-ampersand {
-  fill: white;
+  fill: #fefefe;
 }
 
 .fade {
   opacity: 0;
-  transform: scale(0.9);
+  transform: scale(0.75);
 }
 
 .show {
-  animation-fill-mode: forwards;
-  animation: zoomin 3s ease;
   transform: scale(1);
   opacity: 1;
+}
+
+.logo-square.show {
+  animation-fill-mode: forwards;
+  animation: zoomin 3s ease;
+}
+
+.no-js .logo-square {
+  opacity: 1;
+  transform: scale(1);
 }
 
 main {
@@ -102,7 +115,7 @@ main {
 }
 
 .content {
-  width: 66%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -149,7 +162,7 @@ main {
 .copyright {
   font-size: 50%;
   margin: 10em auto 0 auto;
-  padding: 1em;
+  padding: 1.3333em;
   font-weight: 300;
   text-align: center;
   background: #FFF58C;
