@@ -33,12 +33,17 @@ h1 {
 }
 
 p {
-  font-family: 'Port Lligat Slab', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 300;
-  color: #E89313;
-  font-size: 210%;
+  color: black;
+  font-size: 180%;
   line-height: 1.4;
   font-weight: 300;
+}
+
+.headline {
+  color: #E89313;
+  font-size: 210%;
 }
 
 .page-header {
@@ -169,7 +174,7 @@ main {
 
 
 .copyright {
-  font-size: 50%;
+  font-size: 60%;
   margin: 10em auto 0 auto;
   padding: 1.3333em;
   font-weight: 300;
@@ -229,17 +234,26 @@ main {
   .lemonbar-header {
     width: 90%;
   }
+  .lemonbar .headline {
+    padding-top: 0.25em;
+  }
 }
 
 @media all and (max-width: 500px) {
   .lemonbar-header h1 {
     font-size: 360%;
   }
+  .lemonbar .headline {
+    padding-top: 0.1em;
+  }
 }
 
 @media all and (max-width: 380px) {
   .lemonbar-header h1 {
     font-size: 290%;
+  }
+  .lemonbar .headline {
+    padding-top: 0;
   }
 }
 
