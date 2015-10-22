@@ -11,11 +11,17 @@ body, html {
 
 body {
 	background: #eee;
+}
+
+body, h1, h2, h3 {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
     font-weight: 300;
     text-align: center;
     color: #4f585f;
 }
+
+h1 { font-size: 260%; }
+h2 { font-size: 180%; }
 
 img {
 	width: 100%;
@@ -33,23 +39,26 @@ img {
 
 .mast {
 	background: #eee;
+	border-bottom: 1px solid white;
 }
 
 .social {
 	background: rgba(240,240,240,0.6);
-	padding: 0.55em 0;
 	font-size: 100%;
+	padding-bottom: 1px;
+	margin-top: -1px;
 }
 
-.social a {
-	text-decoration: none;
-	color: #222;
-	letter-spacing: 2px;
+.social-link {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0.8em;
+	background: rgba(210,210,210,0.8);
+	border: 1px solid #eee;
 }
 
-.social a:hover,
-.social a:active {
-	text-decoration: underline;
+.social-link img {
+	max-width: 22px;
 }
 
 #footer {
@@ -64,10 +73,80 @@ main {
 	min-height: 300px;
 }
 
+.product {
+	background-color: #220525;
+    background-image: url(../images/symphony.png);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.product-image {
+	width: 50%;
+}
+
+.product-desc {
+	width: 50%;
+}
+
+.product-desc-inner {
+	background: rgba(220,220,220,0.75);
+	box-shadow: 0 1px 3px rgba(20,20,20,0.4);
+	padding: 3em 2em 3em 2em;
+	margin: 2em;
+}
+
+.product-desc h1 {
+	color: #220525;
+}
+
+.product-desc h2 {
+	color: #764C1D;
+	margin-top: 0.4em;
+}
+
+.product p {
+	text-align: left;
+	margin-top: 1em;
+	font-size: 110%;
+}
+
 .logo {
 	display: inline-block;
 	max-width: 360px;
 	margin: 0.33em 0 0.15em -11px;
+}
+
+.product-images img {
+	display: inline-block;
+	width: 50%;
+	vertical-align: middle;
+}
+
+@media all and (max-width: 960px) {
+	.product {
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	.product-image {
+		width: 100%;
+	}
+
+	.product-desc {
+		width: 100%;
+		background: no-repeat url(../images/gwynn-keyboard-table.jpg);
+		background-size: cover;
+		background-position: center 70%;
+	}
+
+	.product-desc-inner {
+		background: rgba(220,220,220,0.8);
+		margin: 8em 2em;
+	}
 }
 
 @media all and (max-width: 500px) {
