@@ -144,8 +144,9 @@ main {
 	}
 
 	.product-desc-inner {
-		background: rgba(220,220,220,0.8);
-		margin: 8em 2em;
+		background: rgba(220,220,220,0.86);
+		margin: 7em 2em 9em 2em;
+		padding: 2em;
 	}
 }
 
@@ -155,7 +156,20 @@ main {
 	}
 
 	main {
-		margin-top: -2.25em;
+		margin-top: -3.25em;
+	}
+
+	.social {
+		margin: 0;
+		padding-bottom: 1px;
+	}
+
+	.social-link {
+		border: none;
+	}
+
+	.product-desc-inner {
+		margin: 5em 1em 13em 1em;
 	}
 }
 
