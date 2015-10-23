@@ -201,6 +201,12 @@ main {
 	}
 }
 
+@media all and (max-width: 700px) {
+	.product-desc-inner {
+		margin: 5em 2em 10em 2em;
+	}
+}
+
 @media all and (max-width: 500px) {
 	#header {
 		position: relative;
