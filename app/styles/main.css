@@ -112,6 +112,7 @@ main {
 	padding: 2.5em 2em;
 	margin: 2em;
 	border: 1px solid #764C1D;
+	border-radius: 3px;
 }
 
 @media all and (min-width: 1700px) {
