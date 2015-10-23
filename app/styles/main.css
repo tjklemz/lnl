@@ -11,10 +11,11 @@ body, html {
 
 body {
 	background: #eee;
+	font-size: 100%;
 }
 
 body, h1, h2, h3 {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
     text-align: center;
     color: #4f585f;
@@ -61,12 +62,6 @@ img {
 	max-width: 22px;
 }
 
-#footer {
-	text-align: center;
-	padding: 1.66em 0;
-	font-size: 92%;
-}
-
 main {
 	margin-top: 5em;
 	background: #fff;
@@ -95,17 +90,24 @@ main {
 .product-desc-inner {
 	background: rgba(220,220,220,0.75);
 	box-shadow: 0 1px 3px rgba(20,20,20,0.4);
-	padding: 3em 2em 3em 2em;
+	padding: 2.5em 2em;
 	margin: 2em;
+	border: 1px solid #764C1D;
 }
 
 .product-desc h1 {
 	color: #220525;
+	font-weight: 300;
+	font-family: 'Roboto';
 }
 
 .product-desc h2 {
 	color: #764C1D;
-	margin-top: 0.4em;
+	margin-top: 0.33em;
+	padding-bottom: 0.1em;
+	font-family: 'Roboto Slab';
+	letter-spacing: 1px;
+	font-weight: 300;
 }
 
 .product p {
@@ -126,7 +128,19 @@ main {
 	vertical-align: middle;
 }
 
-@media all and (max-width: 960px) {
+#footer {
+	text-align: center;
+	padding: 1.66em 0 2.2em;
+	font-size: 92%;
+}
+
+.made-in-oregon {
+	max-width: 60px;
+	display: block;
+	margin: 0 auto;
+}
+
+@media all and (max-width: 1080px) {
 	.product {
 		-webkit-flex-wrap: wrap;
 		flex-wrap: wrap;
@@ -145,8 +159,17 @@ main {
 
 	.product-desc-inner {
 		background: rgba(220,220,220,0.86);
-		margin: 7em 2em 9em 2em;
+		margin: 7em auto 9em auto;
 		padding: 2em;
+		border: none;
+		max-width: 860px;
+	}
+}
+
+@media all and (max-width: 920px) {
+	.product-desc-inner {
+		margin-left: 2em;
+		margin-right: 2em;
 	}
 }
 

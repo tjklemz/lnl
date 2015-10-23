@@ -2,14 +2,33 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Lory and Ludlow: quirky tech for the future.">
+        <meta name="description" content="Lory and Ludlow: quirky tech for the future. Home of the Gwynn Wireless Mechanical Keyboard.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Lory &amp; Ludlow</title>
+        <title>Lory &amp; Ludlow | Gwynn Wireless Mechanical Keyboard</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="styles/main.css">
-        <link rel="author" href="humans.txt">
         <link rel="icon" href="images/LnL_icon.png">
     </head>
     <body>
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "http://loryandludlow.co",
+            "logo": "http://loryandludlow.co/images/LnL_icon.png",
+            "brand": "Lory & Ludlow",
+            "contactPoint" : [{
+                "@type" : "ContactPoint",
+                "telephone" : "+1-541-891-0256",
+                "contactType" : "customer support"
+            }],
+            "sameAs" : [
+                "https://www.facebook.com/loryandludlow",
+                "https://instagram.com/loryandludlow"
+            ]
+        }
+        </script>
         
         <header id="header">
             <div class="mast">
@@ -21,25 +40,26 @@
         </header>
 
         <main>
-            <div class="product">
+            <div class="product" itemscope itemtype="http://schema.org/Product">
                 <article class="product-desc">
                     <div class="product-desc-inner">
-                        <h1>Gwynn Keyboard</h1>
+                        <h1><span itemprop="name">Gwynn Keyboard</span></h1>
                         <h2 class="product-text">Click is chic.</h2>
-                        <p>A serendipitous typing experience for writers, the Gwynn Keyboard is a wireless mechanical keyboard built using Matias ALPS switches.</p>
+                        <p itemprop="description">A serendipitous typing experience for writers, the Gwynn Keyboard is a wireless mechanical&nbsp;keyboard built using Matias&nbsp;ALPS switches.</p>
                         <p>It's "clicky." Your fingers will feel the difference and your ears will love the&nbsp;sound.</p>
-                        <p>We are launching soon! Keep up to date by following us on social media.</p>
+                        <p>We are launching soon! Keep up to date by following us on social&nbsp;media.</p>
                     </div>
                 </article>
-                <img class="product-image" src="images/gwynn-keyboard.jpg" alt="Gwynn Wireless Mechanical Keyboard" title="Gwynn Wireless Mechanical Keyboard">
+                <img itemprop="image" class="product-image" src="images/gwynn-keyboard.jpg" alt="Gwynn Wireless Mechanical Keyboard" title="Gwynn Wireless Mechanical Keyboard">
             </div>
             <aside class="product-images">
-                <div><img src="images/gwynn-keyboard-stone.jpg"><img src="images/gwynn-keyboard-kfalls.jpg"></div>
-                <div><img src="images/gwynn-keyboard-table.jpg"><img src="images/gwynn-keyboard-pdx-feet.jpg"></div>
+                <div><img src="images/gwynn-keyboard-stone.jpg" alt="Gwynn Wireless Mechanical Keyboard on Cobblestone" title="Gwynn Wireless Mechanical Keyboard on Cobblestone"><img alt="Gwynn Wireless Mechanical Keyboard is made in downtown Klamath Falls, Oregon" title="Gwynn Wireless Mechanical Keyboard is made in downtown Klamath Falls, Oregon" src="images/gwynn-keyboard-kfalls.jpg"></div>
+                <div><img src="images/gwynn-keyboard-table.jpg" alt="Gwynn Wireless Mechanical Keyboard" title="Gwynn Wireless Mechanical Keyboard at Gaucho Collective"><img src="images/gwynn-keyboard-pdx-feet.jpg" alt="Gwynn Wireless Mechanical Keyboard" title="Gwynn Wireless Mechanical Keyboard on PDX carpet"></div>
             </aside>
         </main>
 
         <footer id="footer">
+            <img class="made-in-oregon" src="images/made-in-oregon.png" alt="Oregon Heart logo" title="Made in Southern Oregon">
             <span class="copyright">&copy; 2015 Lory and Ludlow LLC</span>
         </footer>
 
