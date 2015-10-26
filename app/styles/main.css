@@ -10,8 +10,8 @@ body, html {
 }
 
 body {
-	background: #eee;
 	font-size: 100%;
+	background: #220525;
 }
 
 body, h1, h2, h3 {
@@ -160,6 +160,7 @@ main {
 	text-align: center;
 	padding: 1.66em 0 2.2em;
 	font-size: 92%;
+	background: #eee;
 }
 
 .made-in-oregon {
